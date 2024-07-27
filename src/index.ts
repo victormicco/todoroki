@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-console.log("Hello, world!");
+const x = (message: string) => {
+  return "Gello";
+};
+
+console.log("hello!!!!!!!!!!");

@@ -4,10 +4,12 @@
     "todoroki": "./dist/index.js"
   },
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "dev": "tsc -w",
-    "link-cli": "yarn --global unlink todoroki && yarn --global link"
+    "build": "tsc",
+    "postbuild": "echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js",
+    "link-cli": "pnpm unlink --global todoroki && pnpm --global link"
   },
   "keywords": [],
   "author": "victormicco",
