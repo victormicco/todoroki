@@ -1,0 +1,20 @@
+{
+  "name": "todoroki",
+  "bin": {
+    "todoroki": "./dist/index.js"
+  },
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "link-cli": "yarn --global unlink todoroki && yarn --global link"
+  },
+  "keywords": [],
+  "author": "victormicco",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  }
+}
