@@ -4,19 +4,33 @@
     "todoroki": "./dist/index.js"
   },
   "version": "0.0.1",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc",
     "postbuild": "echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js",
-    "link-cli": "pnpm unlink --global todoroki && pnpm --global link"
+    "link-cli": "(yarn --global unlink practice-cli || true) && chmod +x ./dist/index.js && yarn --global link",
+    "lint": "pnpm biome check --write"
   },
   "keywords": [],
   "author": "victormicco",
   "license": "ISC",
   "description": "",
+  "type": "module",
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@types/node": "^20.14.12",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "@commander-js/extra-typings": "^12.1.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.1.4",
+    "picocolors": "^1.0.1"
   }
 }

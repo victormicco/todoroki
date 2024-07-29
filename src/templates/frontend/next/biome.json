@@ -1,0 +1,80 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.6.4/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "all": true,
+        "noSvgWithoutTitle": "off"
+      },
+      "complexity": {
+        "all": true
+      },
+      "correctness": {
+        "all": true
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "style": {
+        "recommended": true,
+        "noDefaultExport": "error",
+        "noNonNullAssertion": "off"
+      },
+      "suspicious": {
+        "all": true
+      },
+      "nursery": {
+        "all": true,
+        "useImportRestrictions": "off",
+        "noNodejsModules": "off",
+        "noUndeclaredDependencies": "off",
+        "noConsole": "off",
+        "noBarrelFile": "off",
+        "noReExportAll": "off",
+        "noNamespaceImport": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": ["src/@types/**/*.d.ts"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUndeclaredVariables": "off"
+          }
+        }
+      }
+    }
+  ],
+  "javascript": {
+    "globals": ["React"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  }
+}
