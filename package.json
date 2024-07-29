@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsc -w",
-    "build": "tsup",
+    "build": "tsc",
     "postbuild": "echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js",
     "link-cli": "(yarn --global unlink practice-cli || true) && chmod +x ./dist/index.js && yarn --global link",
     "lint": "pnpm biome check --write",
