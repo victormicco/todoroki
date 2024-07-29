@@ -13,7 +13,7 @@ const program = new Command();
 program
   .name("todoroki")
   .description("A CLI to create the best boilerplate for your project")
-  .version("1.0.2");
+  .version("1.0.3");
 
 program
   .command("create")

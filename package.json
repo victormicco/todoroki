@@ -3,7 +3,7 @@
   "bin": {
     "todoroki": "./dist/index.js"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "dev": "tsc -w",
@@ -32,6 +32,6 @@
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^10.1.4",
-    "picocolors": "^1.0.2"
+    "picocolors": "^1.0.1"
   }
 }
