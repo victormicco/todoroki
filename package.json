@@ -3,13 +3,13 @@
   "bin": {
     "todoroki": "./dist/index.js"
   },
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc",
     "postbuild": "echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js",
-    "link-cli": "(yarn --global unlink practice-cli || true) && chmod +x ./dist/index.js && yarn --global link",
+    "link-cli": "(yarn --global unlink todoroki || true) && chmod +x ./dist/index.js && yarn --global link",
     "lint": "pnpm biome check --write",
     "release": "pnpm build && changeset publish"
   },

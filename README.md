@@ -6,7 +6,7 @@ Todoroki is a Command Line Interface (CLI) tool to create the best boilerplate f
 
 ## Run it
 
- install the Todoroki CLI globally, use the package manager you prefer:
+ First, run the command below using the package manager you prefer.
 
 Example
 ```bash
