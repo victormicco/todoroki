@@ -1,13 +1,6 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-  "files": {
-    "ignore": ["src/templates/**/*"]
-  },
   "organizeImports": {
-    "enabled": true
-  },
-  "vcs": {
-    "clientKind": "git",
     "enabled": true
   },
   "formatter": {
@@ -15,24 +8,10 @@
     "indentStyle": "space"
   },
   "linter": {
-    "enabled": true,
-    "rules": {
-      "all": true,
-      "correctness": {
-        "noNodejsModules": "off"
-      }
-    }
+    "enabled": true
   },
-  "overrides": [
-    {
-      "include": ["*.config.ts"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noDefaultExport": "off"
-          }
-        }
-      }
-    }
-  ]
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git"
+  }
 }

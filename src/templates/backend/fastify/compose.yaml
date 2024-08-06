@@ -1,9 +1,0 @@
-services:
-  mysql:
-    image: bitnami/mysql:8.0.0
-    environment:
-      MYSQL_ROOT_USER: docker
-      MYSQL_ROOT_PASSWORD: docker
-      MYSQL_DATABASE: example
-    ports:
-      - 5432:5432

@@ -1,0 +1,137 @@
+---
+title: Next.js Template
+description: What is inside of this template?
+---
+
+## Structure
+
+That's how the project will looks like:
+
+<Files className="mt-6">
+  <Folder name="src">
+    <Folder name="app">
+      <File name="layout.tsx" />
+      <File name="page.tsx" />
+    </Folder>
+    <Folder name="components">
+    <Folder name="ui">
+    <File name="button.tsx" />
+      <File name="card.tsx" />
+    </Folder>
+    </Folder>
+    <Folder name="constants">
+      <File name="env.js" />
+    </Folder>
+    <Folder name="lib">
+      <File name="ky.ts" />
+      <File name="utils.ts" />
+    </Folder>
+    <Folder name="services">
+      <File name="index.ts" />
+      <File name="types.ts" />
+    </Folder>
+    <Folder name="styles">
+      <File name="globals.css" />
+      
+    </Folder>
+
+  </Folder>
+  <File name="next.config.js" />
+  <File name="package.json" />
+  <File name="postcss.config.cjs" />
+  <File name="tailwind.config.ts" />
+  <File name="biome.json" />
+</Files>
+
+## Used Technologies
+
+### Biome
+
+The project use Biome to lint and format the code.
+
+<small class="text-primary font-bold text-sm">_Why use Biome?_</small>
+
+- Biome is about **35x faster** than Prettier
+
+- Avoid obscure error messages, when we tell you something is wrong, they tell
+  you exactly where the problem is and how to fix it.
+
+- Out of the box support for all the language features you use today. First
+  class support for TypeScript and JSX.
+
+- With tight internal integration they are able to reuse previous work and any
+  improvement to one tool improves them all.
+
+<LinkButton href="https://biomejs.dev/" variant={"outline"}>
+  Biome Documentation
+</LinkButton>
+
+### Ky for HTTP requests
+
+The project use Ky to HTTP requests.
+
+<small class="text-primary font-bold text-sm">_Why use Ky?_</small>
+
+- Method shortcuts (ky.post())
+
+- Treats non-2xx status codes as errors (after redirects)
+
+- Timeout support
+
+- URL prefix option
+
+- Hooks
+
+- Retries failed requests
+
+<LinkButton href="https://github.com/sindresorhus/ky" variant={"outline"}>
+  Ky Repository
+</LinkButton>
+
+### Shadcn UI
+
+The project uses Shadcn to build UI components.
+
+<small class="text-primary font-bold text-sm">_Why use Shadcn UI?_</small>
+
+- Copy and paste components
+
+- Based on radix and totally customizable and aceppt changes
+
+- _**In a few days I'll change to [Kanpeki UI](https://kanpeki.vercel.app/). It's way better than Shadcn, it offers accessible components with all properties and some useful hooks to improve the user experience**_
+
+<LinkButton href="https://ui.shadcn.com/" variant={"outline"}>
+  Shadcn Website
+</LinkButton>
+
+### Zod
+
+The project uses Zod for validation.
+
+<small class="text-primary font-bold text-sm">_Why use Zod?_</small>
+
+- Enhancing type safety at runtime
+
+- infer the type from the data schemas you define
+
+- display errors at runtime during user interactions with the UI
+
+<LinkButton href="https://zod.dev/" variant={"outline"}>
+  Zod Documentation
+</LinkButton>
+
+### @t3-oss/env-nextjs
+
+The project uses t3-oss to validate **env** files
+
+<small class="text-primary font-bold text-sm">_Why use T3 Env?_</small>
+
+- type-safe environment variables
+
+- Validating envs are quite easy and can be done in a few lines of code
+
+- Support for multiple environments
+
+<LinkButton href="https://env.t3.gg/" variant={"outline"}>
+  T3 Env Documentation
+</LinkButton>

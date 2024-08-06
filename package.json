@@ -1,37 +1,18 @@
 {
-  "name": "todoroki",
-  "bin": {
-    "todoroki": "./dist/index.js"
-  },
-  "version": "1.0.5",
-  "main": "index.js",
+  "private": true,
+  "packageManager": "pnpm@9.0.6",
+  "name": "todoroki-root",
   "scripts": {
-    "dev": "tsc -w",
-    "build": "tsc",
-    "postbuild": "echo '#!/usr/bin/env node' | cat - dist/index.js > temp && mv temp dist/index.js",
-    "link-cli": "(yarn --global unlink todoroki || true) && chmod +x ./dist/index.js && yarn --global link",
-    "lint": "pnpm biome check --write",
-    "release": "pnpm build && changeset publish"
+    "dev": "turbo run dev --parallel --",
+    "build": "turbo run build --",
+    "cli": "pnpm --filter \"todoroki\" --",
+    "www": "pnpm --filter \"@todoroki/www\" --",
+    "lint": "biome check --write "
   },
-  "keywords": [],
-  "author": "victormicco",
-  "license": "ISC",
-  "description": "",
-  "type": "module",
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@types/node": "^20.14.12",
-    "typescript": "^5.5.4"
-  },
-  "dependencies": {
-    "@clack/prompts": "^0.7.0",
-    "@commander-js/extra-typings": "^12.1.0",
-    "@types/fs-extra": "^11.0.4",
-    "@types/inquirer": "^9.0.7",
-    "chalk": "^5.3.0",
-    "commander": "^12.1.0",
-    "fs-extra": "^11.2.0",
-    "inquirer": "^10.1.4",
-    "picocolors": "^1.0.1"
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.3",
+    "turbo": "^2.0.6"
   }
 }
