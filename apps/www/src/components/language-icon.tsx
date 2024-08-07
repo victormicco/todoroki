@@ -8,6 +8,11 @@ const titleMap = new Map([
   ["package.json", Icons.Node],
   ["tsconfig.json", Icons.TSConfig],
   ["biome.json", Icons.Biome],
+  ["schema.prisma", Icons.Prisma],
+  ["register-account.e2e-spec.ts", Icons.SpecTube],
+  ["app.e2e-spec.ts", Icons.SpecTube],
+  ["vitest.config.ts", Icons.Vitest],
+  ["compose.yaml", Icons.Docker],
 ]);
 
 const extensionMap = new Map([

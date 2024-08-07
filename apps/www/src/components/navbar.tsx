@@ -7,9 +7,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/utils/cn";
-import { Book, Github, Home, Twitter } from "lucide-react";
+import { Book, Github, Home, LibraryBig, Twitter, X } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { TwitterLogoIcon } from "@radix-ui/react-icons";
 
 export default function Navbar() {
   return (
@@ -42,7 +43,18 @@ export default function Navbar() {
         </DockIcon>
 
         <Separator orientation="vertical" className="h-full" />
-
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link href={"https://www.npmjs.com/package/todoroki"}>
+                <LibraryBig className="size-4" />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>npm/todoroki</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
@@ -51,7 +63,21 @@ export default function Navbar() {
               </Link>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Github</p>
+              <p>github/todoroki</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <Separator orientation="vertical" className="h-full" />
+
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Link href={"https://x.com/victormicco"}>
+                <TwitterLogoIcon className="size-4" />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>x.com/victormicco</p>
             </TooltipContent>
           </Tooltip>
         </DockIcon>

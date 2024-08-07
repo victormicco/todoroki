@@ -30,6 +30,11 @@ const config = {
         destination: "/docs/introduction",
         permanent: false,
       },
+      {
+        source: "/docs/templates",
+        destination: "/docs/templates/nextjs",
+        permanent: false,
+      },
     ];
   },
 };

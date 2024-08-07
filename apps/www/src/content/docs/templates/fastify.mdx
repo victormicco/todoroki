@@ -1,0 +1,181 @@
+---
+title: Fastify Template
+description: How it works?
+---
+
+## Structure
+
+That's how the project will looks like:
+
+<Files className="mt-6">
+  <Folder name="prisma">
+    <File name="schema.prisma" />
+  </Folder>
+
+  <Folder name="src">
+
+<Folder name="db">
+  <File name="prisma-service.ts" />
+</Folder>
+
+<Folder name="dtos">
+  <Folder name="account">
+    <File name="get-account-by-id.dto.ts" />
+    <File name="login-ccount-request.dto.ts" />
+    <File name="register-account.dto.ts" />
+    <File name="update-account-by-id.dto.ts" />
+    <File name="update-plan-by-id.dto.ts" />
+  </Folder>
+</Folder>
+
+<Folder name="repositories">
+  <Folder name="in-memory">
+    <File name="in-memory-client-repository.ts" />
+  </Folder>
+  <Folder name="prisma">
+    <File name="prisma-account-repository.ts" />
+  </Folder>
+  <File name="account-repository.ts" />
+</Folder>
+
+<Folder name="routes">
+  <Folder name="accounts">
+    <File name="get-account-by-id.ts" />
+    <File name="list-all-accounts.ts" />
+    <File name="login-account-route.ts" />
+    <File name="register-account.ts" />
+    <File name="update-account-by-id.ts" />
+    <File name="update-plan-by-id.ts" />
+  </Folder>
+  <File name="routes.ts" />
+</Folder>
+
+<Folder name="use-cases">
+  <Folder name="accounts-use-cases">
+    <File name="get-account-by-id.ts" />
+    <File name="list-all-accounts.ts" />
+    <File name="login-account-route.ts" />
+    <File name="register-account.ts" />
+    <File name="update-account-by-id.ts" />
+    <File name="update-plan-by-id.ts" />
+  </Folder>
+  <Folder name="factories">
+    <Folder name="accounts">
+      <File name="get-account-by-id.ts" />
+      <File name="list-all-accounts.ts" />
+      <File name="login-account-route.ts" />
+      <File name="register-account.ts" />
+      <File name="update-account-by-id.ts" />
+      <File name="update-plan-by-id.ts" />
+    </Folder>
+  </Folder>
+</Folder>
+
+<Folder name="utils">
+  <File name="pagination.ts" />
+</Folder>
+
+<File name="index.ts" />
+</Folder>
+
+<Folder name="test">
+  <Folder name="accounts">
+    <File name="register-account.e2e-spec.ts" />
+  </Folder>
+  <File name="app.e2e-spec.ts" />
+</Folder>
+
+<File name="package.json" />
+<File name="biome.json" />
+<File name="compose.yaml" />
+<File name="tsup.config.ts" />
+<File name="vitest-e2e.config.ts" />
+<File name="vitest.config.ts" />
+
+</Files>
+
+## Used Technologies
+
+### Biome
+
+The project use Biome to lint and format the code.
+
+<small class="text-primary font-bold text-sm">_Why use Biome?_</small>
+
+- Biome is about **35x faster** than Prettier
+
+- Avoid obscure error messages, when we tell you something is wrong, they tell
+  you exactly where the problem is and how to fix it.
+
+- Out of the box support for all the language features you use today. First
+  class support for TypeScript and JSX.
+
+- With tight internal integration they are able to reuse previous work and any
+  improvement to one tool improves them all.
+
+<LinkButton href="https://biomejs.dev/" variant={"outline"} target="_blank">
+  Biome Documentation
+</LinkButton>
+
+### Prisma ORM
+
+The project use Prisma as the main ORM.
+
+<small class="text-primary font-bold text-sm">_Why use Prisma?_</small>
+
+- Prisma provides full type safety and autocompletion in your IDE, reducing runtime errors and improving development efficiency.
+
+- Easy Database Migrations
+
+- Modern and Intuitive API
+
+- Seamless Integration with TypeScript
+
+- Performance and Efficiency (**It has options more faster, you can change it if you prefer**)
+
+<LinkButton href="https://www.prisma.io/" variant={"outline"} target="_blank">
+  Prisma Documentation
+</LinkButton>
+
+### Vitest
+
+The project uses Vitest to test the application.
+
+<small class="text-primary font-bold text-sm">_Why use Vitest?_</small>
+
+- Blazing Fast Performance
+
+- First-class TypeScript Support
+
+- Rich and Intuitive API
+
+- Powerful Mocking and Stubbing
+
+<LinkButton href="https://vitest.dev/" variant={"outline"} target="_blank">
+  Vitest Documentation
+</LinkButton>
+
+### Docker Compose example
+
+We deliver to you a _**Docker Compose example file**_.
+With that file you can start a local database using Docker and run you application without any problem :)
+
+<hr />
+
+### SOLID
+
+The project has a example of SOLID implementation
+
+<small class="text-primary font-bold text-sm">_Why use SOLID?_</small>
+
+- Improved Code Maintainability
+
+- Enhanced Code Reusability
+
+- Increased Testability
+
+- Scalability and Flexibility
+
+- Better Collaboration and Onboarding
+
+[SOLID Article if you don't know it yet](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
