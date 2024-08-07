@@ -48,7 +48,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+        <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full hidden lg:flex lg:justify-center">
           <MacbookScroll
             title={
               <span className="text-4xl">
