@@ -5,6 +5,8 @@ import AnimatedShinyText from "../components/magicui/animated-shiny-text";
 import { Button, ButtonStyles } from "../components/ui/button";
 import { cn } from "../utils/cn";
 import { LinkButton } from "../components/ui/link-button";
+import { MacbookScroll } from "../components/ui/macbook-scroll";
+import { Badge } from "../components/ui/badge";
 
 export default function Home() {
   return (
@@ -46,6 +48,18 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+          <MacbookScroll
+            title={
+              <span className="text-4xl">
+                Don't waste your time to structure projects anymore <br />{" "}
+                <span className="text-6xl">We do it for you 💫</span>
+              </span>
+            }
+            src={`/code-example.png`}
+            showGradient={false}
+          />
+        </div>
 
         <section
           id="features"
