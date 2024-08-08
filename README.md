@@ -4,37 +4,9 @@ Todoroki is a Command Line Interface (CLI) tool to create the best boilerplate f
 
 ![Todoroki](https://i.pinimg.com/564x/ac/af/62/acaf62c8fe194bd6a70baec50753cb3c.jpg)
 
-## Run it
+[Docs](https://todoroki-eight.vercel.app/)
 
-First, run the command below using the package manager you prefer.
 
-Example
-
-```bash
-npx todoroki
-```
-
-You will see something like this:
-
-```
-Usage: todoroki [options] [command]
-
-A CLI to create the best boilerplate for your project
-
-Options:
-  -V, --version   output the version number
-  -h, --help      display help for command
-
-Commands:
-  create          Create a new project
-  help [command]  display help for command
-```
-
-So to create you project you gotta run
-
-```bash
-npx todoroki create
-```
 
 ## Features
 
