@@ -148,8 +148,9 @@ export const Lid = ({
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <span className="text-white">
-            <AceternityLogo />
+          <span className="text-white text-xs">
+            Use Todoroki to build your next project, <br /> and{" "}
+            <span className="text-primary">save time</span>.
           </span>
         </div>
       </div>
@@ -603,8 +604,7 @@ export const SpeakerGrid = () => {
     <div
       className="flex px-[0.5px] gap-[2px] mt-2 h-40"
       style={{
-        backgroundImage:
-          "radial-gradient(circle, #08080A 0.5px, transparent 0.5px)",
+        backgroundImage: "",
         backgroundSize: "3px 3px",
       }}
     ></div>
@@ -640,27 +640,6 @@ export const OptionKey = ({ className }: { className: string }) => {
         width="32"
         height="32"
         stroke="none"
-      />
-    </svg>
-  );
-};
-
-const AceternityLogo = () => {
-  return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-3 w-3 text-white"
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
       />
     </svg>
   );
