@@ -22,7 +22,7 @@ export class Pagination<TData = any> {
     };
 
     this._pagination = newPagination;
-    this._payload = payload ?? new Array();
+    this._payload = payload ?? [];
 
     if (this._payload.length !== 0) {
       this.quantity(this._payload.length);
