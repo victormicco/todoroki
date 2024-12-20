@@ -1,6 +1,6 @@
 # Todoroki CLI
 
-Todoroki is a Command Line Interface (CLI) tool to create the best boilerplate for your projects. It supports creating boilerplates for Next.js and Fastify projects.
+Todoroki is a Command Line Interface (CLI) tool to create the best boilerplate for your projects. It supports creating boilerplates for Next.js and Fastify projects!
 
 ![Todoroki](https://i.pinimg.com/564x/ac/af/62/acaf62c8fe194bd6a70baec50753cb3c.jpg)
 
