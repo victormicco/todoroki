@@ -4,7 +4,7 @@ Todoroki is a Command Line Interface (CLI) tool to create the best boilerplate f
 
 ![Todoroki](https://i.pinimg.com/564x/ac/af/62/acaf62c8fe194bd6a70baec50753cb3c.jpg)
 
-[Docs](https://todoroki-eight.vercel.app/)
+[Docs](https://todoroki.victormicco.com.br/)
 
 
 
